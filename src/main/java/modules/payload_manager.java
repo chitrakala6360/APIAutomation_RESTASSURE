@@ -2,6 +2,7 @@ package modules;
 
 import com.google.gson.Gson;
 import pojos.Booking;
+import pojos.BookingResponse;
 import pojos.bookingdates;
 
 public class payload_manager {
@@ -39,5 +40,9 @@ public class payload_manager {
         b.setAdditionalneeds("Breakfast");
         return g.toJson(b);
     }
-
+    public BookingResponse bookingResponseJava(String responseString){
+        g = new Gson();
+        BookingResponse bookingRespons = g.fromJson(responseString,BookingResponse.class);
+        return bookingRespons;
+    }
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="restassure_automation_full"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.116">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testCreateBookingNegative"
+                time="2.322"
+                classname="tests.crud.testcreatebookingPost">
+            </testcase>
+            <testcase
+                name="testCreateBooking"
+                time="4.794"
+                classname="tests.crud.testcreatebookingPost">
+            </testcase>
+</testsuite>
