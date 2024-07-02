@@ -1,0 +1,1 @@
+{"uuid":"c59588f7-b83e-41c5-a1a7-d75d44eb4125","name":"restassure_automation_full","children":["b37f0dfc-442e-4b4b-bf89-a695481b3589"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1719899489745,"stop":1719899490495}],"afters":[],"start":1719899489723,"stop":1719899495999}

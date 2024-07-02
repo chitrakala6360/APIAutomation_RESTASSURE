@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="restassure_automation_full"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.010">
+    <properties></properties>
+
+
+
+            <testcase
+                name="deletebooking"
+                time="1.716"
+                classname="tests.integration.TCintegration">
+            </testcase>
+            <testcase
+                name="createBooking"
+                time="5.658"
+                classname="tests.integration.TCintegration">
+            </testcase>
+            <testcase
+                name="verifybookingID"
+                time="1.937"
+                classname="tests.integration.TCintegration">
+            </testcase>
+            <testcase
+                name="updatebooking"
+                time="1.699"
+                classname="tests.integration.TCintegration">
+            </testcase>
+</testsuite>

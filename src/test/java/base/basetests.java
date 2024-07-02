@@ -36,7 +36,36 @@ public class basetests {
                 .log().all();
     }
 
-    public String getToken() {
-        return null;
+    public String getToken()
+    {
+//        r.baseUri(API_CONSTRAINTS.base_url);
+//        r.basePath(API_CONSTRAINTS.auth_url);
+//        r.contentType(ContentType.JSON).body(p.setauthpayload());
+//        r.when().log().all().post();
+//        r.response().then();
+//        String token = p.gettoken(response.asString());
+//        return token;
+
+        r =
+                RestAssured.given().baseUri(API_CONSTRAINTS.base_url)
+                        .basePath(API_CONSTRAINTS.auth_url);
+
+        // Setting the up the Payload
+        String payload = p.setauthpayload();
+
+        // Getting the Response
+        response = r
+                .contentType(ContentType.JSON)
+                .body(payload)
+                .when().post();
+
+        // Extracting of the Token via Deserialization.
+        String token = p.gettoken(response.asString());
+
+        // Verify
+        return token;
+
     }
+
+
 }

@@ -44,10 +44,6 @@ public class testcreatebookingPost extends basetests {
                 .when().body(p.createInvalidPayloadBookingAsString()).post();
 
         v = response.then().log().all();
-
-
-
-        // Validatable Assertion
         v.statusCode(500);
         assertActions.verifyStatusCode(response,500);
     }
